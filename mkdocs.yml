@@ -2,6 +2,8 @@ site_name: BiznetGIO Docs
 site_description: BiznetGIO documentation
 site_favicon: 'img/favicon.ico'
 
+repo_url: https://github.com/BiznetGIO/biznetgio.github.io/
+
 theme:
     name: mkdocs
     highlightjs: true
