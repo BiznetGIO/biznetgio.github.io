@@ -1,0 +1,36 @@
+site_name: BiznetGIO Docs
+site_description: BiznetGIO documentation
+site_favicon: 'img/favicon.ico'
+
+theme:
+    name: mkdocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+
+nav:
+    - Home: index.md
+    - Guide:
+        - Engineering:
+            - Dockerize Flask App: guide/engineering/dockerize-flask.md
+            - Deploying App: guide/engineering/deploy-app.md
+    - About:
+        - Contributing: about/contributing.md
+
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+    - toc:
+        permalink: 
+    - admonition
+    - def_list
+    - mdx_gh_links:
+        user: mkdocs
+        repo: mkdocs
+
+copyright: Copyright &copy; 2019 BiznetGio.
+
+plugins:
+    - search
