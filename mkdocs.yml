@@ -17,6 +17,8 @@ nav:
         - Engineering:
             - Dockerize Flask App: guide/engineering/dockerize-flask.md
             - Deploying App: guide/engineering/deploy-app.md
+            - Standards: guide/engineering/standards.md
+            - Contribution Gude: guide/engineering/contrib-guide.md
     - About:
         - Contributing: about/contributing.md
 
