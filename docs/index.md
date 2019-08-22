@@ -4,6 +4,10 @@
 
 ---
 
+<p align="center">
+<img alt="biznetgio logo" src="https://www.biznetnetworks.com/assets/img/biznet-brand-center/logo/giocloud/Biznet_GioCloud_Logo.jpg"  height="350" width="830">
+</p>
+
 ## Overview
 
 Use the navigation-bar above to search for documentation topics. Read the
