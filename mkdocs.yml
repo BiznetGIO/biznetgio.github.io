@@ -19,6 +19,7 @@ nav:
             - Deploying App: guide/engineering/deploy-app.md
             - Standards: guide/engineering/standards.md
             - Contribution Gude: guide/engineering/contrib-guide.md
+            - Testing Minimalist: guide/engineering/test-minimalist.md
     - About:
         - Contributing: about/contributing.md
 
