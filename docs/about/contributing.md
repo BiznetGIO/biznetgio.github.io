@@ -4,15 +4,13 @@
 
 ## Quickstart
 
-- install mkdocs
+- install mkdocs and related depedencies
 
 ``` python
-pip install mkdoc
-# with the required plugins
-pip install mdx_gh_links 
+pip install mkdoc mdx_gh_links 
 ```
+- clone the repository then make your desired changes
 
-- make your desired changes
 - review your changes with
 
 ``` python
@@ -28,3 +26,10 @@ mkdocs serve
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## Pushing Compiled Docs
+
+``` python
+mkdocs gh-deploy --config-file ./mkdocs.yml --remote-branch master
+```
+
