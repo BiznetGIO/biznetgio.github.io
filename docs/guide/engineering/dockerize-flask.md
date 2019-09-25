@@ -58,7 +58,7 @@ To learn more about `Alpine OS` apk command read [Alpine Linux package managemen
 ## Build the image
 
 ``` bash
-docker build -t flask-tutorial:latest .
+docker build -t flask-tutorial:0.0.1 .
 ```
 - `-t`: to tag your image name <image-name:tag>
 - `.` : current dir (bash syntax)
@@ -80,7 +80,7 @@ Then, add the appropriate `docker-compose.yml` file:
 version: '3'
 services:
   whois: ## your container name
-    image: whois-api:0.0.1 ## your image name (that you built earlier) with the tag
+    image: flask-tutorial:0.0.1 ## your image name (that you built earlier) with the tag
     ports: ## the port on your `HOST:CONTAINER`
         - "5000:5000"
     environment: ## discuss with your team what to put here
