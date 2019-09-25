@@ -1,11 +1,12 @@
 site_name: BiznetGIO Docs
 site_description: BiznetGIO documentation
-site_favicon: 'img/favicon.ico'
 
 repo_url: https://github.com/BiznetGIO/biznetgio.github.io/
 
 theme:
-    name: mkdocs
+    name: 'material'
+    favicon: 'img/logo.png'
+    logo: 'img/logo.png'
     highlightjs: true
     hljs_languages:
         - yaml
@@ -14,13 +15,13 @@ theme:
 nav:
     - Home: index.md
     - Guide:
-        - Engineering:
-            - Dockerize Flask App: guide/engineering/dockerize-flask.md
-            - Deploying App: guide/engineering/deploy-app.md
-            - Standards: guide/engineering/standards.md
-            - Contribution Guide: guide/engineering/contrib-guide.md
-            - Testing Minimalist: guide/engineering/test-minimalist.md
-            - Common Errors: guide/engineering/common-errors.md
+        - Dockerize Flask App: guide/dockerize-flask.md
+        - Deploying App: guide/deploy-app.md
+        - Standards: guide/standards.md
+        - Contribution Guide: guide/contrib-guide.md
+        - Testing Minimalist: guide/test-minimalist.md
+        - Common Errors: guide/common-errors.md
+        - Project Boilerplates: guide/boilerplates.md
     - About:
         - Contributing: about/contributing.md
 
