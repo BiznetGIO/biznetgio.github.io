@@ -1,6 +1,6 @@
 # BiznetGio Docs
 
-<p style="text-align: center;">Internal documentation of BiznetGio.</p>
+<p style="text-align: center;">BiznetGio Engineering Guide.</p>
 
 <p align="center">
     <img alt="biznetgio logo" 
@@ -9,4 +9,4 @@
 </p>
 
 **BiznetGio Docs** is built to serve as the developer guide
-to work with BiznetGio FOSS project or any other FOSS project that used by BiznetGiO.
+to work with BiznetGio FOSS project or any other FOSS project that used by BiznetGio.
