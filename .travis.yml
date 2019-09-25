@@ -1,0 +1,19 @@
+language: python
+python: 3.7
+branches: source
+install:
+    - pip install mkdocs mdx_gh_links mkdocs-material
+
+script: true
+
+before_deploy:
+    - mkdocs build --verbose --clean --strict
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: site
+    target_branch: master
+    on:
+        branch: source
