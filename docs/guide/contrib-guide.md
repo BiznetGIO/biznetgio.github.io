@@ -16,6 +16,12 @@ in each project.
 * Bug fix branches should be created for fixing bugs and merged into
   `dev` when ready.
 
+!!! info
+
+    we don't use `master` - `development` branch for monorepo. Instead we use
+    `<servicename>/<workitem>` such as `api/add-health-endpoint`, and those
+    branches will be merged into master eventually.
+
 ## Opening a new issue
 
 1. Look through existing issues to see if your issue already
