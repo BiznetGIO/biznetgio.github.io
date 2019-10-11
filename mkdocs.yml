@@ -24,6 +24,7 @@ nav:
         - Project Boilerplates: guide/boilerplates.md
         - RESTKnot:
             - Knot Clash Course: guide/knot-clash-course.md
+            - RESTKnot Setup: guide/knot-setups.md
     - About:
         - Contributing: about/contributing.md
 
