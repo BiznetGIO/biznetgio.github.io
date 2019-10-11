@@ -22,6 +22,8 @@ nav:
         - Testing Minimalist: guide/test-minimalist.md
         - Common Errors: guide/common-errors.md
         - Project Boilerplates: guide/boilerplates.md
+        - RESTKnot:
+            - Knot Clash Course: guide/knot-clash-course.md
     - About:
         - Contributing: about/contributing.md
 
