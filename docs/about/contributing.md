@@ -4,20 +4,21 @@
 
 ## Quickstart
 
-- install mkdocs and related depedencies
+- Install dependencies
 
-``` python
-pip install mkdoc mdx_gh_links 
-```
-- clone the repository then make your desired changes
+    ``` python
+    pip install -r requirements.txt
+    ```
 
-- review your changes with
+- Make your desired changes
 
-``` python
-mkdocs serve
-```
+- Review your changes with
 
-- make the pull request.
+    ``` python
+    mkdocs serve
+    ```
+
+- Make pull request
 
 
 ## Project layout
@@ -27,9 +28,29 @@ mkdocs serve
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-## Pushing Compiled Docs
+## Deploy documentation
+
+!!! info
+    We use two branch. `source` to hold all the source contents, and `master` for
+    compiled contents.
 
 ``` python
 mkdocs gh-deploy --config-file ./mkdocs.yml --remote-branch master
 ```
 
+Or you can use CI automation:
+
+``` yaml
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: site
+    target_branch: master
+    on:
+        branch: source
+```
+
+`$github_token` is the token than you generate from Github with the scope of
+`public_repo` and `repo_deployment`. Then put that token into your CI platform
+(such as Travis).
