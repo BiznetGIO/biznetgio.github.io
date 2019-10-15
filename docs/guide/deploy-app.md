@@ -67,15 +67,15 @@ in "/etc/ssh/sshd_config", then re-started the service `sudo systemctl restart s
 
 - [save docker as tar](https://stackoverflow.com/a/23938978/6000005)
 
-`docker save -o <path for generated tar file> <image name>`
+    `docker save -o <path for generated tar file> <image name>`
 
 - move from your local machine to remote vm
 
-`scp -i /path/to/key.pem whois-api.tar <username>@<public-ip>:~/your/destination/dir/`
+    `scp -i /path/to/key.pem whois-api.tar <username>@<public-ip>:~/your/destination/dir/`
 
 - `cd` to your "destionation/dir" then load the image
 
-`docker load -i <path to image tar file>`
+    `docker load -i <path to image tar file>`
 
 ## Run the app
 

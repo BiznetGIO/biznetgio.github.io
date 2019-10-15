@@ -4,43 +4,44 @@
 
 - Install etcd & knot
 
-``` bash
-apt install knot libknot8 etcd
-```
+    ``` bash
+    apt install knot libknot8 etcd
+    ```
 
 - Start knot & etcd
 
-``` bash
-sudo systemctl start etcd
-sudo systemctl start knot
+    ``` bash
+    sudo systemctl start etcd
+    sudo systemctl start knot
 
-# check if they are running
-sudo systemctl status etcd
-sudo systemctl status knot
-```
+    # check if they are running
+    sudo systemctl status etcd
+    sudo systemctl status knot
+    ```
 
 - Run kafka & zookeeper (using docker container)
 
-create file docker-compose.yml which contains:
+    create file docker-compose.yml which contains:
 
-```
-version: '3'
-services:
-  zookeeper:
-    image: wurstmeister/zookeeper
-  kafka:
-    image: wurstmeister/kafka
-    ports:
-      - "9092:9092"
-    environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-```
-Then run it with:
+    ``` bash
+    version: '3'
+    services:
+        zookeeper:
+            image: wurstmeister/zookeeper
+        kafka:
+            image: wurstmeister/kafka
+            ports:
+                - "9092:9092"
+            environment:
+                KAFKA_ADVERTISED_HOST_NAME: localhost
+                KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    ```
 
-``` bash
-docker-compose up
-```
+    Then run it with:
+
+    ``` bash
+    docker-compose up
+    ```
 
 ## Setups
 
@@ -65,70 +66,69 @@ pip install -e .
 
 - Set broker and knot value
 
-``` bash
-sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi broker
-sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi knot
-```
+    ``` bash
+    sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi broker
+    sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi knot
+    ```
 
-Value example:
+    Value example:
 
-!!! info
+    !!! info
 
-    Each operating system has different location of `libknot.so` and it's
-    socket, so check it carefully.
+        Each operating system has different location of `libknot.so` and it's
+        socket, so check it carefully.
 
-``` bash
-# knot env value example
-OS_KNOT_LIB=libknot.so
-OS_KNOT_SOCKS=/var/run/knot/knot.sock
+    ``` bash
+    # knot env value example
+    OS_KNOT_LIB=libknot.so
+    OS_KNOT_SOCKS=/var/run/knot/knot.sock
 
-#  broker env value example
-OS_BROKER=localhost
-OS_PORTS=9092
-OS_TOPIC=domaindata
-OS_FLAGS=master
-OS_GROUP=cmgz_master
-```
+    #  broker env value example
+    OS_BROKER=localhost
+    OS_PORTS=9092
+    OS_TOPIC=domaindata
+    OS_FLAGS=master
+    OS_GROUP=cmgz_master
+    ```
 
 - Check value
 
-``` bash
-sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi show -e broker
-```
+    ``` bash
+    sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent envi show -e broker
+    ```
 
 - Start the agent
 
-``` bash
-sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent start master
-```
-
+    ``` bash
+    sudo /home/azzamsya/.virtualenvs/rest-knot/bin/dnsagent start master
+    ```
 
 ### Setup the RESTKnot API
 
 - Install API dependencies
 
-``` bash
-cd RESTKnot/api/
-pip install -r requirements.txt
-pip install -e .
-```
+    ``` bash
+    cd RESTKnot/api/
+    pip install -r requirements.txt
+    pip install -e .
+    ```
 
 - Populate data to etcd
 
-``` bash
-cd RESTKnot/api/
-python migrate_db.py 
-```
+    ``` bash
+    cd RESTKnot/api/
+    python migrate_db.py 
+    ```
 
 - Run RESTKnot API
 
-``` bash
-# for development
-sh run.sh server development
+    ``` bash
+    # for development
+    sh run.sh server development
 
-# for production
-sh run.sh server production
-```
+    # for production
+    sh run.sh server production
+    ```
 
 ## Test the result
 

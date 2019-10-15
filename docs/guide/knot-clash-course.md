@@ -17,7 +17,7 @@ $ sudo systemctl start knot
 $ sudo systemctl status knot
 ```
 
-## Server Login
+## Server login
 
 - copy the key and put it into a  `key.pem` file
 - change it's mode: `chmod 600 key.pem`
@@ -25,23 +25,24 @@ $ sudo systemctl status knot
 - log to your machine using ssh
 
 
-``` bash
-$ ssh -i key.pem centos@<your ip master>
-```
+    ``` bash
+    $ ssh -i key.pem centos@<your ip master>
+    ```
 
-Accessible machine (the one that had the public Ips) are only the slaves. To
-access the servers that had private IPs (including master). Use the key file
-inside the slave servers.
+    Accessible machine (the one that had the public Ips) are only the slaves. To
+    access the servers that had private IPs (including master). Use the key file
+    inside the slave servers.
 
 - to log to server that didn't have public IPs.
 
-``` bash
-[centos@cmg01z00knsl001 ~]$ ls   # this in in master server
-STAGING  STAGING.tar.gz  vm-key.pem
+    ``` bash
+    [centos@cmg01z00knsl001 ~]$ ls   # this in in master server
+    STAGING  STAGING.tar.gz  vm-key.pem
 
-[centos@cmg01z00knsl001 ~]$ ssh -i vm-key.pem centos@<slave ip>
-[centos@vultr-test-1 ~]$  # logged into slave server
-```
+    [centos@cmg01z00knsl001 ~]$ ssh -i vm-key.pem centos@<slave ip>
+    [centos@vultr-test-1 ~]$  # logged into slave server
+    ```
+
 
 We use the following format, to name our servers:
 
@@ -53,51 +54,51 @@ cmg01z00knms001: for master
 cmg01z00knsl001: for slave
 ```
 
-## Knot Setups
+## Knot setups
 
 - Ensure all old files removed 
 
-!!! warning
+    !!! warning
 
-    Do this only if you knot what you are doing, otherwise jump directly to "start
-    adding zone" at the next step"
+        Do this only if you knot what you are doing, otherwise jump directly to "start
+        adding zone" at the next step"
 
 
-``` bash
-rm -rf * /var/lib/knot # knot database
-rm -rf * /etc/knot # knot config
-rm -rf * /run/knot # knot socket 
-```
+    ``` bash
+    rm -rf * /var/lib/knot # knot database
+    rm -rf * /etc/knot # knot config
+    rm -rf * /run/knot # knot socket 
+    ```
 
 - start the knot
 
-``` bash
-# systemctl start knot
-```
+    ``` bash
+    # systemctl start knot
+    ```
 
-The initial file of knot (after removing all contents in `/var/lib/knot/` and
-`/etc/knot/`) are only the `timers` directory in `/var/lib/knot/`
+    The initial file of knot (after removing all contents in `/var/lib/knot/` and
+    `/etc/knot/`) are only the `timers` directory in `/var/lib/knot/`
 
 - start adding zone (or other things)
 
-``` bash
-sudo knotc conf-init
-```
+    ``` bash
+    sudo knotc conf-init
+    ```
 
-Start `knotc conf-init`. This step only requered if you have fresh knot installation.
+    Start `knotc conf-init`. This step only requered if you have fresh knot installation.
 
-This will add `confdb` directory in `/var/lib/knot/`.
+    This will add `confdb` directory in `/var/lib/knot/`.
 
-To check the content of knot database, you can do export it to the file:
+    To check the content of knot database, you can do export it to the file:
 
-``` bash
-# knotc conf-export /etc/knot/knot.conf
+    ``` bash
+    # knotc conf-export /etc/knot/knot.conf
 
-# to check it's content
-# cat /etc/knot/knot.conf
-```
+    # to check it's content
+    # cat /etc/knot/knot.conf
+    ```
 
-## Add your zone (simple example)
+## Adding config (simple example)
 
 
 ``` bash
@@ -134,7 +135,7 @@ then import to the knot db:
 knotc conf-import knot.conf
 ```
 
-## Adding SOA (example)
+## Adding zone (SOA example)
 
 ``` bash
 # knotc zone-begin lapar.io
@@ -150,7 +151,7 @@ OK
 [lapar.io.] lapar.io. 86400 SOA ns1.biz.net.id. hostmaster.biz.net.id. 2018070410 10800 3600 604800 38400
 ```
 
-## Adding NS (example)
+## Adding zone (NS example)
 
 ``` bash
 # knotc zone-begin lapar.io
@@ -166,7 +167,7 @@ OK
 [lapar.io.] lapar.io. 86400 SOA ns1.biz.net.id. hostmaster.biz.net.id. 2018070411 10800 3600 604800 38400
 ```
 
-## Adding A (example)
+## Adding zone (A example)
 
 
 ``` bash
