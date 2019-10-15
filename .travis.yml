@@ -2,7 +2,7 @@ language: python
 python: 3.7
 branches: source
 install:
-    - pip install mkdocs mdx_gh_links mkdocs-material
+    - pip install -r requirements.txt
 
 script: true
 

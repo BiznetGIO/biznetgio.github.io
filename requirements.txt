@@ -1,0 +1,7 @@
+# mkdocs
+mkdocs==1.0.4
+mkdocs-material==4.4.2
+
+# markdown extensions
+mdx-gh-links==0.2
+pymdown-extensions==6.1
