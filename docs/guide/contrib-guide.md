@@ -9,12 +9,10 @@ in each project.
 
 ## Project organization
 
-* Branch `master` is always stable and release-ready.
- * **Never ever try to submit patch direcly to master**
-* Branch `dev` is for development and merged into `master` when stable.
-* Feature branches should be created for adding new features and merged into `dev` when ready.
-* Bug fix branches should be created for fixing bugs and merged into
-  `dev` when ready.
+- We only use one branch for the project: `master` branch.
+- Tag will be created to mark stable release.
+- Bug fix or Hot fix branches should be created for fixing bugs and merged into
+  `master` when ready.
 
 !!! info
 
@@ -38,7 +36,7 @@ in each project.
 ## Submitting a pull request
 
 1. Find an issue to work on, or create a new one. *Avoid duplicates, please check existing issues!*
-2. Fork the repo, or make sure you are synced with the latest changes on `dev`.
+2. Fork the repo, or make sure you are synced with the latest changes on `master`.
 3. Create a new branch with a sweet name: `git checkout -b issue_<##>_<description>`.
 4. Do code.
  - Plese follow [PEP8](https://pep8.org/)
@@ -47,8 +45,8 @@ in each project.
 5. Write unit tests when applicable.
 6. Don't break unit tests or functionality.
 7. Update the documentation header comments if needed.
-8. **Rebase on `dev` branch and resolve any conflicts _before submitting a pull request!_**
-9. Submit a pull request to the `dev` branch. Make sure to add yourself to
+8. **Rebase on `master` branch and resolve any conflicts _before submitting a pull request!_**
+9. Submit a pull request to the `master` branch. Make sure to add yourself to
    AUTHORS file.
 
 
