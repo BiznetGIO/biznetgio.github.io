@@ -31,29 +31,29 @@ docker rmi -f $(docker images -f "dangling=true" -q) ## daggling images
 - Add the `Dockerfile`
 
 ``` bash
-## remove anyline like this, I am just a description
-
 ## we choose alpine for the sake of tiny size
-FROM alpine
+FROM python:3.7-alpine
 
-## make appropriate folder for our app
-RUN mkdir /app
-COPY . /app
+RUN pip3 install gunicorn ## wsgi server in your container
+
+## choose 'app' as workdir. Docker will create if it doesn't exists
 WORKDIR /app
 
-## install appropriate depedencies for your app
-RUN apk update && \
-    apk --no-cache add python3 git && \ ## add only neccesarry depedency
-    pip3 install -r requirements.txt && \
-    pip3 install gunicorn ## wsgi server in your container
+# copy just the requirements.txt first to leverage Docker cache
+COPY ./requirements.txt /app/requirements.txt
+RUN pip3 install -r /app/requirements.txt
+
+COPY . /app
 
 ## define the port you will be using
 EXPOSE 5000
 ```
 
-Read [Dockerfilereference](https://docs.docker.com/engine/reference/builder/#from) documentation to learn more about these keyword.
+Read [Dockerfilereference](https://docs.docker.com/engine/reference/builder/#from) documentation to learn more about these keywords.
 
 To learn more about `Alpine OS` apk command read [Alpine Linux package management wiki](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management).
+
+Leveraging Docker build cache documented in [Dockerfile Bestpractice](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
 
 ## Build the image
 
