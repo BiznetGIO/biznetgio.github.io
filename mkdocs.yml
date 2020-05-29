@@ -25,6 +25,7 @@ nav:
         - RESTKnot:
             - Knot Clash Course: guide/knot-clash-course.md
             - RESTKnot Setup: guide/knot-setups.md
+        - Gunicorn Best Practice: guide/gunicorn.md
     - About:
         - Contributing: about/contributing.md
 
