@@ -20,6 +20,7 @@ in each project.
     `<servicename>/<workitem>` such as `api/add-health-endpoint`, and those
     branches will be merged into master eventually.
 
+
 ## Opening a new issue
 
 1. Look through existing issues to see if your issue already
@@ -49,7 +50,14 @@ in each project.
 9. Submit a pull request to the `master` branch. Make sure to add yourself to
    AUTHORS file.
 
+!!! info
 
+     Start the title with `WIP:` to prevent a Work In Progress merge request from being merged before it's ready. 
+
+## Close an issue
+Issue can be close automatically when pull request merged succesfully. 
+Dont forget tag an issue start with `close #<issue_number>` on your pull request description.
+ 
 ### First time setup
 
 Please refer to instalation guide and running test suitein each project.
