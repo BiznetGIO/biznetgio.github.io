@@ -20,6 +20,17 @@ in each project.
     `<servicename>/<workitem>` such as `api/add-health-endpoint`, and those
     branches will be merged into master eventually.
 
+## Project name in repositories 
+
+We define project name with prefix svc/fe in repositories.
+
+1.  **svc-**`<yourawesomeproject-api>` 
+	If your project contain backend APi such a microservice.
+2.  **fe-**`<yourawesomeproject-frontend>` 
+	If a frontend project.
+3.  `<yourawesomeproject>` 
+	Left blank if doesn't contain frontend or backend. 		
+
 
 ## Opening a new issue
 
@@ -54,9 +65,10 @@ in each project.
 
      Start the title with `WIP:` to prevent a Work In Progress merge request from being merged before it's ready. 
 
-## Close an issue
-Issue can be close automatically when pull request merged succesfully. 
-Dont forget tag an issue start with `close #<issue_number>` on your pull request description.
+## Close issue
+
+Tag an issue start with `close #<issue_number>` on your pull request description.
+Issue will close automatically when pull request merged succesfully. 
  
 ### First time setup
 
