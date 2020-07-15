@@ -16,7 +16,7 @@ Create project from boilerplate, you can define whatever project that you want.
 Boilerplate also include many libraries writen many language(e.g. python, javascript, shell)  
 
 ### Deploy and Run with Orcinus
-"Orcinus is container orchestration management tools" only, because orcinus support k8s
+Orcinus is container orchestration management tools.
 
 ### All Around Code 
 We keep all code in single repositories as monorepo. 
