@@ -19,6 +19,12 @@ nav:
         - Deploying App: guide/deploy-app.md
         - Standards: guide/standards.md
         - Contribution Guide: guide/contrib-guide.md
+        - BGN Developer Tools:
+            - Prefix: guide/bgn-dev-welcome.md 
+            - First Setup: guide/bgn-dev-initiliaze.md
+            - Managing Project: guide/bgn-dev-manage-project.md
+            - Orcinus: guide/bgn-dev-orcinus.md
+            - Deploying: guide/gitlab-ci.md
         - Testing Minimalist: guide/test-minimalist.md
         - Common Errors: guide/common-errors.md
         - Project Boilerplates: guide/boilerplates.md
