@@ -19,6 +19,6 @@ Project will automatically get prefix name with `svc` or as backend project.
 
 
 ## Running and Test On Local Development
-Run your project with `.bgn-dev project deploy svc-awesome`. 
+Run your project with `./bgn-dev project deploy svc-awesome`. 
 This step will proceed your container up on local with orcinus.
 

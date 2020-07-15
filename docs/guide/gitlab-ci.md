@@ -1,4 +1,7 @@
-We define 2 stage deploy project to public, staging and production.
+We define 2 stage deploy project to public, staging and production. 
+
+Furthermore, we also provide automation code inspector with SonarQube. 
+SonarQube tools help you to monitoring some bugs, vulnerability and reliability code inside your project. 
 
 
 ## Restricted Rule
@@ -8,6 +11,13 @@ We define 2 stage deploy project to public, staging and production.
 4. Perhaps if you still change your code and unmerge pull request, 
    edit your pull request title with prefix `WIP:`   
 
+
+## gitlab-ci for Test Code
+This step will add your project to SonarQube within on this [link](https://cq.biznetgio.dev/). 
+Generate a gitlab-ci file test with `bgn-dev` tools
+```bash
+  ./bgn-dev ci generate-test <your-awesome-project>
+```
 
 ## gitlab-ci for Staging
 Generate a gitlab-ci file staging with `bgn-dev` tools
@@ -21,7 +31,7 @@ Generate a gitlab-ci file staging with `bgn-dev` tools
   ./bgn-dev ci generate-production <your-awesome-project>
 ```
 
-## Deploy Staging 
+## Staging Deployment 
 Already publish code to staging please do this :
 
 1. Create pull request without prefix `WIP:`
@@ -35,6 +45,6 @@ Meanwhile if you dont want deploy on staging :
 2. Dont create pull request to master
 3. Set pull request with title `WIP:`   
 
-## Deploy Production
+## Production Deployment
 1. On monorepo project, change your version on file `version`
 2. On legacy repositories, tag your version and commit push to new version 

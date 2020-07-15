@@ -16,7 +16,7 @@ Create project from boilerplate, you can define whatever project that you want.
 Boilerplate also include many libraries writen many language(e.g. python, javascript, shell)  
 
 ### Deploy and Run with Orcinus
-Orcinus is container orchestration management tools for docker swarm mode. 
+"Orcinus is container orchestration management tools" only, because orcinus support k8s
 
 ### All Around Code 
 We keep all code in single repositories as monorepo. 
@@ -28,3 +28,8 @@ When your code ready to publish, deliver your code with confidence.
 
 !!!info 
 	before going further, read this [deploy rule](gitlab-ci.md) on Gitlab CI/CD first.
+
+### Code Analyst Automation
+Don't loose develop any project, keep always confidence to code. 
+We already integrated with [SonarQube](https://www.sonarqube.org/), 
+help you check how reability, secure and maintability your code.    
