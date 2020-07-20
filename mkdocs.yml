@@ -32,6 +32,7 @@ nav:
             - Knot Clash Course: guide/knot-clash-course.md
             - RESTKnot Setup: guide/knot-setups.md
         - Gunicorn Best Practice: guide/gunicorn.md
+        - Git Tips and Tricks: guide/git-tutorial.md
     - About:
         - Contributing: about/contributing.md
 
