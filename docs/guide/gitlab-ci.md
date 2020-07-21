@@ -10,6 +10,8 @@ SonarQube tools help you to monitoring some bugs, vulnerability and reliability 
 3. Define prefix `WIP:` to avoid project owner merge your code if you not done yet.
 4. Perhaps if you still change your code and unmerge pull request, 
    edit your pull request title with prefix `WIP:`   
+5. You should not commit and push your code to others existing pull request. 
+Do it for your pull request only!  
 
 !!! important
 	Creating new branch without rebasing from master will miss some latest code. 
