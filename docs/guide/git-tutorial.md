@@ -31,6 +31,11 @@ then rebase from master
 ```bash
    git rebase origin/master
 ```
+do pull to ensure your code sync with master
+```bash
+   git pull
+```
+
 
 
 
