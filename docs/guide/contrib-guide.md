@@ -1,11 +1,6 @@
-# Contributing to open source BiznetGio Project
+# Guidelines
 
-We'd be happy for you to contribute!
-
-## Support questions
-
-Please, don't use the issue tracker for this. Use the preserved gitter channel
-in each project.
+---
 
 ## Project organization
 
@@ -70,7 +65,23 @@ We define project name with prefix svc/fe in repositories.
 Tag an issue start with `close #<issue_number>` on your pull request description.
 Issue will close automatically when pull request merged succesfully. 
  
+
+## Restricted Rule
+1. Dont create new branch except from master.
+2. Dont create pull request except to master.
+3. Define prefix `WIP:` to avoid project owner merge your code if you not done yet.
+4. Perhaps if you still change your code and unmerge pull request, 
+   edit your pull request title with prefix `WIP:`   
+5. You should not commit and push your code to others existing pull request. 
+Do it for your pull request only!  
+
+!!! important  
+    Creating new branch without rebasing from master will miss some latest code. 
+    Before continue on your working branch, always fetch first and rebase with master.
+    Still confuse with this? Check git tips and ticks [here](git-tutorial.md). 
+
+
+
 ### First time setup
 
 Please refer to instalation guide and running test suitein each project.
-

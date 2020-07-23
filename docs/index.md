@@ -9,4 +9,4 @@
 </p>
 
 **BiznetGio Docs** is built to serve as the developer guide
-to work with BiznetGio FOSS project or any other FOSS project that used by BiznetGio.
+to work with BiznetGio internal project or any FOSS external project that used by Biznetgio.
