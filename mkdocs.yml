@@ -15,7 +15,7 @@ theme:
 
 nav:
     - Home: index.md
-    - Engineer Guide:
+    - Engineering:
         - Intro: guide/contrib-intro.md
         - Contribute Guideline: 
             - Guidelines: guide/contrib-guide.md
