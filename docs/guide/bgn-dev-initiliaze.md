@@ -12,7 +12,7 @@ Give an access as root permissions when command prompt sudo appear.
 When initialize already done, you dont need to initialize again.   
 
 !!! note
-	If you use Windows 10 as your operating system, you can use WSl/WSL2 to run it. 
+	If you use Windows 10 as your operating system, you can use WSL/WSL2 to run it. 
 	But some feature may not working perfectly(WSL under development).  
 
 ## Run Sample Project

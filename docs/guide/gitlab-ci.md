@@ -4,14 +4,6 @@ Furthermore, we also provide automation code inspector with SonarQube.
 SonarQube tools help you to monitoring some bugs, vulnerability and reliability code inside your project. 
 
 
-## Restricted Rule
-1. Dont create new branch except from master.
-2. Dont create pull request except to master.
-3. Define prefix `WIP:` to avoid project owner merge your code if you not done yet.
-4. Perhaps if you still change your code and unmerge pull request, 
-   edit your pull request title with prefix `WIP:`   
-
-
 ## gitlab-ci for Test Code
 This step will add your project to SonarQube within on this [link](https://cq.biznetgio.dev/). 
 Generate a gitlab-ci file test with `bgn-dev` tools
