@@ -28,13 +28,13 @@ nav:
             - Managing Project: guide/bgn-dev-manage-project.md
             - Orcinus: guide/bgn-dev-orcinus.md
             - Deployment: guide/gitlab-ci.md
+        - Reporting Workflow:
+            - Report: guide/reporting-workflow.md
+            - Logs: guide/logger-dashboard.md
         - Clash Course:
             - Dockerize Flask App: guide/dockerize-flask.md
             - Deploy App on Devbox: guide/deploy-app.md
             - Common Errors: guide/common-errors.md
-
-            # - Knot Clash Course: guide/knot-clash-course.md
-            # - RESTKnot Setup: guide/knot-setups.md
             - Gunicorn Best Practice: guide/gunicorn.md
             - Git Tips and Tricks: guide/git-tutorial.md
     - About:
@@ -45,7 +45,7 @@ extra_css:
 
 markdown_extensions:
     - toc:
-        permalink: 
+        permalink: 
     - admonition
     - def_list
     - pymdownx.superfences
