@@ -27,6 +27,7 @@ nav:
             - First Setup: guide/bgn-dev-initiliaze.md
             - Managing Project: guide/bgn-dev-manage-project.md
             - Orcinus: guide/bgn-dev-orcinus.md
+            - Sprint Board: guide/sprint-board.md
             - Deployment: guide/gitlab-ci.md
         - Reporting Workflow:
             - Report: guide/reporting-workflow.md
