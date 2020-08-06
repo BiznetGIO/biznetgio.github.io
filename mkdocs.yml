@@ -27,9 +27,9 @@ nav:
             - First Setup: guide/bgn-dev-initiliaze.md
             - Managing Project: guide/bgn-dev-manage-project.md
             - Orcinus: guide/bgn-dev-orcinus.md
-            - Sprint Board: guide/sprint-board.md
             - Deployment: guide/gitlab-ci.md
         - Reporting Workflow:
+            - Sprint Board: guide/sprint-board.md
             - Report: guide/reporting-workflow.md
             - Logs: guide/logger-dashboard.md
         - Clash Course:
@@ -50,6 +50,7 @@ markdown_extensions:
     - admonition
     - def_list
     - pymdownx.superfences
+    - pymdownx.emoji
     - mdx_gh_links:
         user: mkdocs
         repo: mkdocs

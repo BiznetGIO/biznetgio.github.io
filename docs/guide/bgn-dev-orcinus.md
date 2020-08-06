@@ -14,12 +14,15 @@ Then inside your project, we already generated 3 orcinus file.
 3. `orcinus-production.yml`: orcinus file to run on productions
 
 ### Structure monorepo project
+```bash
+  .
 	your-awesomeproject    # monorepo project
 	├── <generated from boilerplate code>
 	├── orcinus-dev.yml  
 	├── orcinus.yml  
 	├── orcinus-production.yml
 	└── version 
+```
 
 !!! note
 	File `version` is not auto generated, you need to add this when ready to production. 
