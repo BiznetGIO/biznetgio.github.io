@@ -1,6 +1,6 @@
 On internal development we do syncup meeting on every wednesday. 
 Happily all reporting in our internal development automated by telegram bot. 
-Don't be afraid lost of tracking your issue, bot already record your activity from sprint board. 
+Don't be afraid lost of tracking your issue, bot already record your activity from task board. 
 
 <p align="center">
 	<img src="../img/bot-reporting.png">
@@ -20,5 +20,5 @@ Don't left an issue for 5 days within any progress. Discuss with your team to so
 
 
 Finnaly, just focus your task. Make your days nice and fun with coding. 
-Let us do automate your sprint activity :smile:!       
+Let us do automate your progress activity :smile:!       
 

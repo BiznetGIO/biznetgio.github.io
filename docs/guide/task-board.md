@@ -1,17 +1,17 @@
 On gitlab we manage workitems and task from issues. 
 You can create any issue and assign to yourself or another person on your teams. 
-Once you create an issue, dont forget set issues on sprint board to track progress report. 
+Once you create an issue, dont forget set issues on task board to track progress report. 
 
 On gitlab, We provide important boards to manage your progress issues. 
-Defined sprint board step:
+Defined task board step:
 
 <p align="center">
-	<a href="../img/sprint-board.png" target="_blank">
-    	<img src="../img/sprint-board.png">
+	<a href="../img/task-board.png" target="_blank">
+    	<img src="../img/task-board.png">
 	</a>
 </p>
 
-## Sprint Board Step
+## Task Board Step
 #### 1. Open 
 First time you create issue, default is on open board. When issue on open board may still discussing or as a backlog.
 #### 2. To Do

@@ -29,7 +29,7 @@ nav:
             - Orcinus: guide/bgn-dev-orcinus.md
             - Deployment: guide/gitlab-ci.md
         - Reporting Workflow:
-            - Sprint Board: guide/sprint-board.md
+            - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
             - Logs: guide/logger-dashboard.md
         - Clash Course:
