@@ -40,7 +40,7 @@ You can request from gitlab as pipeline and logs will viewed as jobs tty.
 
 <img src="../img/step2-produce-logs-production.png">
 2. Set variabel with <b>SERVICE_NAME</b> with value service name. 
-This service name can found on <b>orcinus-production.yml</b>  
+This service name can be found in <b>orcinus-production.yml</b>  
 </br></br>
 
 <img src="../img/step3-produce-logs-production.png">
