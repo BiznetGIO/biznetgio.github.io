@@ -1,4 +1,10 @@
-Orcinus is simple orchestration management tools already support k8s (kubernetes).
+Modern deployment need take fast and efficient manageable process workflow. 
+Meanwhile, containerize apps one of solutions to driven fast software delivery. 
+Making as containerize make legacy apps running without limitations from enviroment hosts, reliable delivery and scalable runtime.
+
+We introduce `Container Production Environment` to manage our deployment. 
+Deployment proccess like a mechanism for networking, monitoring, and containerized applications untill executed on hosts, maintenance by orcinus orchestration management tools.     
+Orcinus is opensource simple orchestration management tools already support k8s (kubernetes).
 
 ### Infrastructure as Code (IaC) 
 Orcinus already support to describe your infrastructure within orcinus yaml file. 
