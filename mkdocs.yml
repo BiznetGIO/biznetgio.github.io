@@ -27,13 +27,25 @@ nav:
             - First Setup: guide/bgn-dev-initiliaze.md
             - Managing Project: guide/bgn-dev-manage-project.md
             - Container Production Enviroment: guide/bgn-dev-orcinus.md
-            - Deployment: guide/gitlab-ci.md
+            - Pipeline Stage Process:
+                - Test: guide/pipeline-test.md
+                - Build: guide/pipeline-build.md
+                - Release: guide/pipeline-release.md
+                - Deploy: guide/pipeline-deploy.md
+            - Featured Tools:
+                - Tunneling Staging Apps: guide/bgn-dev-tunneling.md
+                - Proxy: guide/bgn-dev-proxy.md
+                - Logging: guide/bgn-dev-logs.md
+            - Deployment: 
+                - Deployment Staging: guide/gitlab-ci.md
+                - Deployment Production: guide/deployment-production.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
             - Logs: guide/logger-dashboard.md
         - Clash Course:
             - Dockerize Flask App: guide/dockerize-flask.md
+            - Sonarqube Code Analyzer: guide/sonarqube-course.md
             - Deploy App on Devbox: guide/deploy-app.md
             - Common Errors: guide/common-errors.md
             - Gunicorn Best Practice: guide/gunicorn.md
