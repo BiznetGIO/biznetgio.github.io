@@ -27,18 +27,13 @@ nav:
             - First Setup: guide/bgn-dev-initiliaze.md
             - Managing Project: guide/bgn-dev-manage-project.md
             - Container Production Enviroment: guide/bgn-dev-orcinus.md
-            - Pipeline Stage Process:
-                - Test: guide/pipeline-test.md
-                - Build: guide/pipeline-build.md
-                - Release: guide/pipeline-release.md
-                - Deploy: guide/pipeline-deploy.md
+            - Deployment: 
+                - Deployment Staging: guide/deployment-staging.md
+                - Deployment Production: guide/deployment-production.md
             - Featured Tools:
                 - Tunneling Staging Apps: guide/bgn-dev-tunneling.md
                 - Proxy: guide/bgn-dev-proxy.md
                 - Logging: guide/bgn-dev-logs.md
-            - Deployment: 
-                - Deployment Staging: guide/gitlab-ci.md
-                - Deployment Production: guide/deployment-production.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md

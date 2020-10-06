@@ -1,8 +1,7 @@
 We define 2 stage deploy project to public, staging and production. 
-
-Furthermore, we also provide automation code inspector with SonarQube. 
-SonarQube tools help you to monitoring some bugs, vulnerability and reliability code inside your project. 
-
+Staging is internal release, this phase proccess to test and review by product owner. 
+After apps ready successfully runnning on staging, all feature will be check according with product documentations.
+This step make sure of all functional feature works normally before move to productions.
 
 ## gitlab-ci for Test Code
 This step will add your project to SonarQube within on this [link](https://cq.biznetgio.dev/). 
@@ -17,11 +16,6 @@ Generate a gitlab-ci file staging with `bgn-dev` tools
   ./bgn-dev ci generate-staging <your-awesome-project>
 ```
 
-## gitlab-ci for Production
-Generate a gitlab-ci file staging with `bgn-dev` tools
-```bash
-  ./bgn-dev ci generate-production <your-awesome-project>
-```
 
 ## Staging Deployment 
 Already publish code to staging please do this :
@@ -36,7 +30,3 @@ Meanwhile if you dont want deploy on staging :
 1. Only push your code to your active branch
 2. Dont create pull request to master
 3. Set pull request with title `WIP:`   
-
-## Production Deployment
-1. On monorepo project, change your version on file `version`
-2. On legacy repositories, tag your version and commit push to new version 
