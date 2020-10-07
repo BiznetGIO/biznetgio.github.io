@@ -4,7 +4,7 @@ After apps ready successfully runnning on staging, all feature will be check acc
 This step make sure of all functional feature works normally before move to productions.
 
 ## Staging Phase
-Autodevops deployment procced by pipeline gitlab ci/cd .
+Autodevops deployment staging proccess by pipeline gitlab ci/cd .
 Pipeline are the top-level component of continuous integration, delivery, and deployment.
 Pipeline comprise with jobs and stage. Job define _what_ proccess todo, and stage define _when_ process to do. 
 
@@ -46,7 +46,7 @@ Build stage is step when containerize the applications. Jobs build container ima
 
 
 ### 3. release
-Release stage is step push/upload successfull image built to our registry image. 
+Release stage is step push/upload successfull container image to our registry image. 
 This step register an image container with tag `latest` and ready to deploy on staging server. 
 <p align="center">
 	<img src="../img/pipeline-giov2api-release.png">
