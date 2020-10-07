@@ -26,9 +26,6 @@ You can compare and learn code from another example project on folder.
 Tools already integrated with autodevops, both staging and productions.
 When your code ready to publish, deliver your code with confidence. 
 
-!!!info 
-	before going further, read this [deploy rule](gitlab-ci.md) on Gitlab CI/CD first.
-
 ### Code Analyst Automation
 Don't loose develop any project, keep always confidence to code. 
 We already integrated with [SonarQube](https://www.sonarqube.org/), 

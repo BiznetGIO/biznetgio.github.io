@@ -31,9 +31,9 @@ nav:
                 - Deployment Staging: guide/deployment-staging.md
                 - Deployment Production: guide/deployment-production.md
             - Featured Tools:
-                - Tunneling Staging Apps: guide/bgn-dev-tunneling.md
-                - Proxy: guide/bgn-dev-proxy.md
-                - Logging: guide/bgn-dev-logs.md
+                - Tunneling Staging Apps: guide/bgn-dev-remote-tunnel.md
+                - Proxy: guide/bgn-dev-remote-proxy.md
+                - Logging: guide/bgn-dev-remote-logs.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
