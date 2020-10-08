@@ -1,11 +1,13 @@
 Production is final stage when distributed and deliver built applications going public.
 Surely, all functional feature already checked and tested by product owner. 
 
+
+
 ## Production Phase
 Same with staging phase deployment, on production we do with autodevops on gitlab ci.
 Production pipeline will triggered _when_ project owner or deployment team accept your pull request merge to `master` branch. 
 
-We determine with 3 stage proccess on production pipeline :
+We determine with 3 stage process on production pipeline :
 
 - build
 - release
@@ -48,7 +50,7 @@ reference: [semantic version v2.0.0](https://semver.org/)
 
 
 ### 2. release
-Release stage is push/upload successfull container image to our registry image. 
+Release stage is push/upload successfull built container image to our registry image. 
 <p align="center">
 	<img src="../img/pipeline-giov2api-prod-release.png">
 </p>
@@ -60,16 +62,6 @@ Deploying will automatically detect `orcinus-production.yml` , this will run on 
 </p>
 
 
-This stage production will not run if you dont add production gitlab ci file. You can generate with `bgn-dev tools` as describe before.  
-#### gitlab-ci for Production
-Generate a gitlab-ci file production with `bgn-dev` tools
-```bash
-  ./bgn-dev ci generate-production <your-awesome-project>
-```
-
-!!!important
-   	on monorepo project please contact deployment team to generate gitlab ci file to avoid conflict file 
- 
 
 ## Production Deployment Note
 1. On monorepo project, change your version on file `version`
