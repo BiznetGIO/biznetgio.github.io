@@ -30,14 +30,14 @@ nav:
                 - Container Production Enviroment: guide/container-production-enviroment.md
                 - Deployment Staging: guide/deployment-staging.md
                 - Deployment Production: guide/deployment-production.md
-            - Logs:
+            - Test:
                 - Testing Minimalist: guide/test-minimalist.md
                 - Integrations Test : guide/integrations-test.md
                 - Sonarqube Code Analyzer: guide/sonarqube-documentations.md
+            - Logs: guide/logger-dashboard.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
-            - Logs: guide/logger-dashboard.md
         - Clash Course:
             - Dockerize Flask App: guide/dockerize-flask.md
             - Deploy App on Devbox: guide/deploy-app.md
