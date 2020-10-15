@@ -18,19 +18,19 @@ This figure explain workflow how sonarqube works.
     <img src="../img/sonarqube-overview.png">
 </p>
 
-1. Project Menu
+#### 1. Project Menu
 Default list project will shown as homepage dashboard,this page overview result and general report of all project.  
 
-2. Issues 
+#### 2. Issues 
 Issues will report here, some advice will given from sonarqube related what language code that you write.
 
-3. Rules
+#### 3. Rules
 This rules provide by sonarqube, consist of more programming language rules to detect our project and compare with standard code. 
 
-4. Quality Profiles 
+#### 4. Quality Profiles 
 Sonarqube has built in bunch of rules base from programming language. Here we can explore convention code example to reduce or avoid vulnerabilities
 
-5. Quality Grade
+#### 5. Quality Grade
 This page inform you pass criteria of project. 
 By default this built in from sonarqube, a project with status `PASSED` or `FAILED` measured from this list.
 <p align="center">
