@@ -33,7 +33,7 @@ nav:
             - Test:
                 - Testing Minimalist: guide/test-minimalist.md
                 - Integrations Test : guide/integrations-test.md
-                - Sonarqube Code Analyzer: guide/sonarqube-documentations.md
+                - Code Analyzer: guide/sonarqube-documentations.md
             - Logs: guide/logger-dashboard.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
