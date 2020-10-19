@@ -53,5 +53,14 @@ By default this built in from sonarqube, a project with status `PASSED` or `FAIL
 8. Check duplicating code on project
 9. Composition programming language contain on your project 
 
+### Grade Measurement 
+RELIABILITY = A, B, C, D, E
+SECURITY = A, B, C, D, E
+SECURITY REVIEW = A, B, C, D, E
+MAINTAINABILITY = A, B, C, D, E
+COVERAGE = % Percentage
+DUPLICATE = % Percentage
+
+
 ## Credits
 [Sonarqube Documentations](https://docs.sonarqube.org/latest/) 
