@@ -46,8 +46,7 @@ nav:
             - Git Tips and Tricks: guide/git-tutorial.md
         - Featured Tools:
             - Tunneling Staging Apps: guide/bgn-dev-remote-tunnel.md
-            - Proxy: guide/bgn-dev-remote-proxy.md
-            - Logging: guide/bgn-dev-remote-logs.md
+            - Logging (Staging): guide/bgn-dev-remote-logs.md
     - About:
         - Contributing: about/contributing.md
 
