@@ -25,6 +25,7 @@ Update: <your commit message>
 Remove: <your commit message>
 Fix: <your commit message>
 ```
+
 - `Add`: for feature additions.
 - `Update`: for feature update.
 - `Remove`: for feature dropping, etc.
