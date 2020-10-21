@@ -2,7 +2,7 @@ This section provide instructions to comply with the standard convention how to 
 
 ## For Code: 
 ### 1. Validate input. 
-Validate input from all untrusted data sources. Proper input validation can eliminate the vast majority of software vulnerabilities. Be suspicious of most external data sources, including command line arguments, network interfaces, environmental variables, and user controlled files [Seacord 05]. 
+Validate input from all untrusted data sources. Proper input validation can eliminate the vast majority of software vulnerabilities. Be suspicious of most external data sources, including command line arguments, network interfaces, environmental variables, and user controlled files. 
 ### 2. Architect and design for security policies. 
 Create a software architecture and design your software to implement and enforce security policies. For example, if your system requires different privileges at different times, consider dividing the system into distinct intercommunicating subsystems, each with an appropriate privilege set. 
 ### 3. Keep it simple. 
