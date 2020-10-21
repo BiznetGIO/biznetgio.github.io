@@ -4,16 +4,20 @@
 
 ## Style Guide
 
-### Python
+Software engineers must use these conventions to make the code more secure also more readable by another engineer: 
 
-We use [black](https://github.com/psf/black) for code formatter, and
-[pre-commit](https://pre-commit.com/) for it's
-[automation](https://github.com/psf/black#version-control-integration). Read
-[Black editor integration](https://github.com/psf/black#editor-integration) for
-more information.
+1. For code style, use the standard such as: 
+	1. Python 
+		* PEP-0257 - python officially recommends to follow the high-level docstring conventions. This describes how the classes, functions, and codes should be documented and how this really helps for code readability.  
+		* PEP-3101 - This is the new system for built-in string formatting operations, intended as a replacement for the existing ‘%’ string formatting operator. 
+		* PEP-0008 - python coding style guidelines which strongly recommend naming conventions, comments, formatting and lot more... 
+		* GPSG - Google Python Style Guideline talks about do’s and don'ts for python programs and it explains technically with proof and concepts. 
+		* Python Anti-Patterns - provides anti-pattern with a technical explanation of best practices and it covers anti-pattern for Django framework also. 
+		* reference : The Hitchhikers Guide to Python - the book written by Kenneth and Tany, this book covers lots of recommended best practices from the section called Writing Great Python Code. will use PEP-8 
+	2. PHP will use PSR-0, PSR-1 or PSR-2 
 
-To enforce PEP-08 standard we use [flake8](http://flake8.pycqa.org/en/latest/),
-and integrate it's plugin to our code editor.
+3. Meaningless / ambiguous variable name should not be used. 
+4. Default language for any messages such as comments, warning, error, etc. will be using English and not using Bahasa Indonesia 
 
 ## Commit Message Guide
 
@@ -31,9 +35,11 @@ Fix: <your commit message>
 - `Remove`: for feature dropping, etc.
 - `Fix`: for bug fixing, style, etc.
 
-## Code standard
 
-We adhere to [clean code](https://www.oreilly.com/library/view/clean-code/9780136083238/)
-ideology. Most common things such as:
+## Comments  
+For every code and function, there must be a comment. Refer to PEP-8, the comment must: 
 
-- meaningless / ambigous variable name: `x`, `y`, `ymdstr`.
+ * Complete sentence, its first word should be capitalized, unless it is an identifier that begins with a lower case letter 
+ * If a comment is short, the period at the end can be omitted 
+ * Use two spaces after a sentence-ending period 
+ * Use English 

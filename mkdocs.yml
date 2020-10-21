@@ -21,6 +21,7 @@ nav:
             - Guidelines: guide/contrib-guide.md
             - Standards: guide/standards.md
             - Project Boilerplates: guide/boilerplates.md
+            - Security Conventions: guide/security-conventions.md
         - Development Workflow:
             - Prefix: guide/bgn-dev-welcome.md 
             - First Setup: guide/bgn-dev-initiliaze.md
