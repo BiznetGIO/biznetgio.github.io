@@ -29,6 +29,10 @@ An exact service name can find on `orcinus.yml`
 	<img src="../img/logs-specific-name.png">
 </p>
 
+!!! attention
+	Logs staging from kibana dashboard will depracted, we use bgn tools to accommodate logs tracking.
+	Jump to this page for tutorial [logs staging](bgn-dev-remote-logs.md)     
+
 ## Production Logs
 We don't produce stream production logs like on staging. 
 You can request from gitlab as pipeline and logs will viewed as jobs tty.

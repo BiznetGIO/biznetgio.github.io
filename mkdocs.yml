@@ -21,23 +21,33 @@ nav:
             - Guidelines: guide/contrib-guide.md
             - Standards: guide/standards.md
             - Project Boilerplates: guide/boilerplates.md
-            - Testing Minimalist: guide/test-minimalist.md
+            - Security Conventions: guide/security-conventions.md
         - Development Workflow:
             - Prefix: guide/bgn-dev-welcome.md 
             - First Setup: guide/bgn-dev-initiliaze.md
             - Managing Project: guide/bgn-dev-manage-project.md
-            - Orcinus: guide/bgn-dev-orcinus.md
-            - Deployment: guide/gitlab-ci.md
+            - Managing CI/CD: guide/managing-ci-cd.md
+            - Deployment: 
+                - Container Production Enviroment: guide/container-production-enviroment.md
+                - Deployment Staging: guide/deployment-staging.md
+                - Deployment Production: guide/deployment-production.md
+            - Test:
+                - Testing Minimalist: guide/test-minimalist.md
+                - Integrations Test : guide/integrations-test.md
+                - Code Analyzer: guide/sonarqube-documentations.md
+            - Logs: guide/logger-dashboard.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
-            - Logs: guide/logger-dashboard.md
         - Clash Course:
             - Dockerize Flask App: guide/dockerize-flask.md
             - Deploy App on Devbox: guide/deploy-app.md
             - Common Errors: guide/common-errors.md
             - Gunicorn Best Practice: guide/gunicorn.md
             - Git Tips and Tricks: guide/git-tutorial.md
+        - Featured Tools:
+            - Tunneling Staging Apps: guide/bgn-dev-remote-tunnel.md
+            - Logging (Staging): guide/bgn-dev-remote-logs.md
     - About:
         - Contributing: about/contributing.md
 

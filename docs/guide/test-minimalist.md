@@ -1,3 +1,5 @@
+This page will give you some tutorial to create a test minimalist on your project. 
+
 # Magic Tricks of Testing (summary) Sandy Metz
 
 ## Incoming

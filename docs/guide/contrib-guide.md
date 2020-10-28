@@ -44,7 +44,7 @@ We define project name with prefix svc/fe in repositories.
 
 1. Find an issue to work on, or create a new one. *Avoid duplicates, please check existing issues!*
 2. Fork the repo, or make sure you are synced with the latest changes on `master`.
-3. Create a new branch with a sweet name: `git checkout -b issue_<##>_<description>`.
+3. Create a new branch with a sweet name: `git checkout -b project-name/[issue/work items]`.
 4. Do code.
  - Plese follow [PEP8](https://pep8.org/)
  - Please watch your [line length](https://baymard.com/blog/line-length-readability). It's

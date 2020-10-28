@@ -1,4 +1,17 @@
-Orcinus is simple orchestration management tools already support k8s (kubernetes).
+Modern deployment need take fast and efficient manageable process workflow. 
+Meanwhile, containerize apps one of solutions to driven fast software delivery. 
+Making as containerize make legacy apps running without limitations from enviroment hosts, reliable delivery and scalable runtime.
+
+Containerize apps not enough when apps ready to deliver. 
+Common issued appear when developer spend many time to setup their applications, it will getting worst if company has contain many project. 
+We introduce `Container Production Environment(CPE)` to manage our deployment. 
+This CPE stage adopt from modern software development lifecycle, aim for simplify entire our project run and deploy. 
+CPE enviroment scope build and running of the application using an existing orcinus file. 
+Means, it ready support with AutoDevops concept, CPE will run automatically detect, build, test, deploy and monitor base on where stage you deploy, staging or production.  
+
+### Orcinus
+Orcinus is opensource simple orchestration management tools already support k8s (kubernetes).
+With orcinus file present configurations, container image, service name, enviroment and some configurations can handled infrastructure within code/config. 
 
 ### Infrastructure as Code (IaC) 
 Orcinus already support to describe your infrastructure within orcinus yaml file. 
@@ -27,7 +40,8 @@ Feel interest about orcinus tools? Check our wiki [here](https://github.com/orci
 ----
 
 ### Orcinus file on monorepo project
-Orcinus file with extension yaml format (.yml) required to run with orcinus tools.
+Orcinus file with extension yaml format (.yml) required to run with orcinus tools. 
+Container Production Enviroment as AutoDevops will automatically detect to deploy and running a container service.   
 
 ### Generated orcinus file
 Then inside your project, we already generated 3 orcinus file. 
