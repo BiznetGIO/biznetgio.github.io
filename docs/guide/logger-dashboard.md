@@ -3,35 +3,23 @@ Produce logs contain with standard out and error logs messages.
 So may this will help you debug code when getting some issues.
 
 
-### Staging Logs
-Staging logs served by kibana dashboard on https://log.biznetgio.dev/. 
-Trace some logs can be viewed realtime as in your browser. 
-You can filter specific service name by find out from `orcinus.yml` on your project folder.
+## Staging Logs
+Staging logs can access by remote logs with bgn tools. 
+This will help you check some error logs as realtime on terminal. 
 
-#### sample 1:
-Find logs with contain service name by typing service name on search tab. 
+First find service name with remote list command. 
+Already explain from this tutorial: [bgn dev show remote service](bgn-dev-remote-tunnel.md#show-all-running-service-on-staging-server)
+Then do with this command below:
 
-<p align="center">
-	<img src="../img/logs-contain-name.png">
-</p>
-
-
-#### sample 2:
-Find logs with specific service name by typing `docker.name:<exact service name>`.
-An exact service name can find on `orcinus.yml`
+```
+./bgn-dev remote logs <service_name>
+```
 
 <p align="center">
-	<img src="../img/orcinus-service-name.png">
+	<img src="../img/bgn-dev-logs-giov2api.png">
 </p>
 
-
-<p align="center">
-	<img src="../img/logs-specific-name.png">
-</p>
-
-!!! attention
-	Logs staging from kibana dashboard will depracted, we use bgn tools to accommodate logs tracking.
-	Jump to this page for tutorial [logs staging](bgn-dev-remote-logs.md)     
+    
 
 ## Production Logs
 We don't produce stream production logs like on staging. 
