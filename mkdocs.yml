@@ -40,6 +40,7 @@ nav:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
         - Clash Course:
+            - Frontend Basic: guide/frontend-guideline.md
             - Dockerize Flask App: guide/dockerize-flask.md
             - Deploy App on Devbox: guide/deploy-app.md
             - Common Errors: guide/common-errors.md
