@@ -4,4 +4,4 @@ mkdocs-material==4.4.2
 
 # markdown extensions
 mdx-gh-links==0.2
-pymdown-extensions==6.1
+pymdown-extensions==10.0
