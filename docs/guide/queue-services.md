@@ -1,8 +1,3 @@
-## Document Information
-- Date: March 7, 2025
-- Author: Aldo
-- Version: 1.0
-
 ## Overview
 This document outlines the new Queue Service architecture implementation, focusing on offloading actions from HB (Host Bridge) and facilitating future migration any services. 
 
@@ -78,15 +73,46 @@ HB -> Queue Service -> Broker -> Service Notifier -> HB
 Queue message service will serve as the first service to implement this architecture, serving as a model for future service integrations.
 
 ## Standardize Modules Functions
-Template modules should be define : 'modules/<service_name>'
+Template modules should be define on modules folder with spesific name microservice : 'modules/<service_name>'
 
-example : 
+example template file : 
 
 ```
 'modules/app_platform.py'
 'modules/neo_lite.py'
 'modules/neo_metal.py'
 ```
+
+Example implementations :
+script code : `modules/counter.py`
+```
+import requests
+
+
+def multiply(number: str):
+    return 2 * int(number)
+
+def count_words_at_url(url: str):
+    """Just an example function that's called async."""
+    print("module loaded")
+    resp = requests.get(url)
+    print(resp.text)
+    return len(resp.text.split())
+```
+
+APis request and response output :
+
+<p align="center">
+	<img src="../img/multiply.png">
+</p>
+multiply 
+
+<p align="center">
+	<img src="../img/count_word.png">
+</p>
+count word 
+
+
 
 ## Webhook Mechanism to Host Bridge  
 This standardize from queue service to HB (Host Bridge) process.
