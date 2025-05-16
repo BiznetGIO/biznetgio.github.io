@@ -36,6 +36,8 @@ nav:
                 - Integrations Test : guide/integrations-test.md
                 - Code Analyzer: guide/sonarqube-documentations.md
             - Logs: guide/logger-dashboard.md
+        - Technical Documentation:
+            - Microservice Architecture and Service Integration: guide/queue-services.md
         - Reporting Workflow:
             - Task Board: guide/task-board.md
             - Report: guide/reporting-workflow.md
