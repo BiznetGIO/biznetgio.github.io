@@ -110,7 +110,7 @@ multiply
 <p align="center">
 	<img src="../img/count_word.png">
 </p>
-count word 
+count_words_at_url 
 
 
 
