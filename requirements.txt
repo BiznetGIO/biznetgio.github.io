@@ -26,7 +26,7 @@ python-dateutil==2.9.0.post0
 pytz==2025.2
 PyYAML==6.0.2
 pyyaml-env-tag==0.1
-requests==2.32.3
+requests==2.32.4
 six==1.17.0
 urllib3==2.2.3
 watchdog==4.0.2
